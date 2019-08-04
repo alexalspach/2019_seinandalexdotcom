@@ -1,0 +1,19 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+font-family: 'Aguafina Script', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Give You Glory', cursive;
+font-family: 'Mrs Sheppards', cursive;
+*/
+
+html {
+	background: url(bg2.jpg) no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	
+}
