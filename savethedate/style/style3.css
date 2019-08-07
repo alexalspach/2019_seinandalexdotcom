@@ -1,0 +1,89 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*
+font-family: 'Aguafina Script', cursive;
+font-family: 'Rock Salt', cursive;
+font-family: 'Mr Dafoe', cursive;
+font-family: 'Give You Glory', cursive;
+font-family: 'Mrs Sheppards', cursive;
+*/
+
+
+
+html, body {
+  height: 100%;
+  margin: 0px;
+}
+
+
+
+
+
+
+
+@media (orientation: landscape) {
+	/* DESKTOP */
+
+	#save_the_date{
+	    width:53%;
+	    height:100%;
+	    /*border:1px solid red;*/
+	    background: blue;
+	    float:left;
+	}
+
+	#divider{
+	    width:1%;
+	    height:100%;
+	    /*border:1px solid red;*/
+	    background: yellow;
+	    float:left;
+	}	
+
+	#dates{
+	    width:46%;
+	    height:100%;
+	    /*border:1px solid red;*/
+	    background: green;
+	    float:right;
+	}
+
+}
+
+
+
+@media (orientation: portrait) {
+	/* MOBILE */
+
+	#save_the_date{
+	    width:100%;
+	    height:53%;
+	    background: blue;
+	    float:top;
+	}
+
+	#divider{
+	    width:100%;
+	    height:1%;
+	    /*border:1px solid red;*/
+	    background: yellow;
+	    float:top;
+	}		
+
+	#dates{
+	    width:100%;
+	    height:46%;
+	    background: green;
+	    float:bottom;
+	}
+
+}
+
+
+@media (min-width:320px)  { /* smartphones, iPhone, portrait 480x320 phones */ }
+@media (min-width:481px)  { /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */ }
+@media (min-width:641px)  { /* portrait tablets, portrait iPad, landscape e-readers, landscape 800x480 or 854x480 phones */ }
+@media (min-width:961px)  { /* tablet, landscape iPad, lo-res laptops ands desktops */ }
+@media (min-width:1025px) { /* big landscape tablets, laptops, and desktops */ }
+@media (min-width:1281px) { /* hi-res laptops and desktops */ }
