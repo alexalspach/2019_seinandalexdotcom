@@ -27,6 +27,7 @@ body {
   height: 100%;
   width: 100%;
   margin: 0;
+  background: white;
   
 }
 
@@ -54,27 +55,57 @@ a {
 	background-size: cover;
 }
 
+.save_the_date_text{
+	width: 85%;
+	height: 90%;
+	/*padding-top: 100px;
+	padding-bottom: 100px;*/
+	display: block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 1.0;
+}
+
 
 #divider{
     background: #D1A098;
 }	
 
 #dates{
-    background: white;
+    /*background: white;*/
 }
+
+.world_tour_text{
+	height: 90%;
+	display: block;
+	position: relative;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	opacity: 1.0;
+	z-index: 2;
+}
+
+
+
 
 #contactus_link{
 	position: absolute;
   	right: 0;
   	bottom: 1%;
-  	padding-right: 10px;
-  	/*font-size: 2.0em;*/
+  	padding-right: 20px;
+  	z-index: 2;
 }
+
+
 
 #contact_container{
 	display: table;
 	width: 100%;
     height: 100%;
+    z-index:2;
     /*This container pretends to be a table so that
     contact_table can be vertically centered within the one cell */
 }
@@ -88,7 +119,6 @@ a {
 table{
 	margin: auto; 
 	/*For hizontal center*/
-
 }
 
 
@@ -98,6 +128,29 @@ table{
 	width: auto;
 	padding: .5em;
 	padding-right: .8em;
+
+
+}
+
+.flowertop{
+
+	opacity: 0.15;
+	position: absolute;
+	width: 30%;
+	right:0;
+	z-index: -1;
+
+}
+
+.flowerbottom{
+
+	transform: rotate(180deg);
+	opacity: 0.15;
+	position: absolute;
+	width: 30%;
+	bottom:0;
+	right:5.8%;
+	z-index: -1;
 
 }
 
@@ -124,28 +177,8 @@ table{
 	    /*min-width: 450px;*/
 	}
 
-	.save_the_date_text{
-		width: 85%;
-		height: 90%;
-		/*padding-top: 100px;
-		padding-bottom: 100px;*/
-		display: block;
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		opacity: 1.0;
-	}
-
 	.world_tour_text{
 		width: 85%;
-		height: 90%;
-		display: block;
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		opacity: 1.0;
 	}		
 
 }
@@ -171,51 +204,31 @@ table{
 	    /*flex-grow : 1;*/
 	}
 
-	.save_the_date_text{
-		width: 85%;
-		height: 90%;
-		/*padding-top: 100px;
-		padding-bottom: 100px;*/
-		display: block;
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		opacity: 1.0;
+	.flowertop{
+		display: none;
 	}
 
-	.world_tour_text{
-		
-		height: 90%;
-		display: block;
-		position: relative;
-		top: 50%;
-		left: 50%;
-		transform: translate(-50%, -50%);
-		opacity: 1.0;
-	}		
+	.flowerbottom{
+		width: 60%;
+		left:0;
+	}
+
 
 }
 
-@media (max-width: 500px) and (orientation: portrait)  {
+@media (max-width: 500px)  {
 
 	html {
 	  font-size: 1.0em;
 	}
 
-	/*#contactus_link{
-		font-size: 1.0em;
-	}*/
 }
 
-@media (max-width: 350px) and (orientation: portrait)  {
+
+@media (max-height: 500px)  {
 
 	html {
 	  font-size: 1.0em;
-	}	
+	}
 
-	/*#contactus_link{
-		font-size: 1.0em;
-	}*/		
-  
 }
