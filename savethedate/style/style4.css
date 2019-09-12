@@ -165,15 +165,49 @@ table{
 	position: absolute;
 	width: 30%;
 	bottom:0;
-	right:5.8%;
+	right: 5.8%;	
 	z-index: -1;
 
+}
+
+.flowertop_info{
+
+	opacity: 0.15;
+	position: absolute;
+	width: 40%;
+	right:0;
+	z-index: -1;
+	top: 0px;
+
+}
+
+.flowerbottom_info{
+
+	transform: rotate(180deg);
+	opacity: 0.15;
+	position: absolute;
+	width: 40%;
+	bottom:0;
+	left:0px;
+	z-index: -1;
+
+}
+
+#info2{
+	padding-top: 2em;
+	padding-bottom: 2em;
+	font-size: 1em;
+	max-width: 35em;
+	margin-left: auto;
+    margin-right: auto;
 }
 
 
 
 /* ===-= DESKTOP =-=== */
+/*@media (orientation: landscape) and (min-width: 320px) {*/
 @media (orientation: landscape) {
+
 
 	#outer {
 		flex-flow: row;
@@ -193,12 +227,7 @@ table{
 	    /*min-width: 450px;*/
 	}
 
-	#info{
-	    /*flex-grow : 1;*/
 
-	    
-	    /*min-width: 450px;*/
-	}	
 
 	.world_tour_text_landscape{
 		width: 85%;
@@ -210,12 +239,15 @@ table{
 	}	
 
 	p{
-		padding-top: 25%;
+		/*padding-top: 25%;*/
 		padding-left: 8%;
 		padding-right: 8%;
+		vertical-align: middle
+		font-size: 8em;
 	}		
 
 }
+
 
 
 /* ===-= MOBILE =-=== */
@@ -238,11 +270,27 @@ table{
 	    /*flex-grow : 1;*/
 	}
 
+	#info{
+		font-size: 4vw;
+	}		
+
 	.flowertop{
-		display: none;
+		/*display: none;*/
+
 	}
 
 	.flowerbottom{
+		width: 60%;
+		left:0;
+	}
+
+
+	.flowertop_info{
+		width: 60%;
+		/*display: none;*/
+	}
+
+	.flowerbottom_info{
 		width: 60%;
 		left:0;
 	}
@@ -256,7 +304,7 @@ table{
 	}	
 
 	p{
-		padding-top: 5%;
+		/*padding-top: 5%;*/
 		padding-left: 8%;
 		padding-right: 8%;
 	}
