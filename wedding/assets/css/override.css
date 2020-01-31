@@ -1,5 +1,7 @@
 	.object-fit_contain { object-fit: contain }
 
+	@import url('https://fonts.googleapis.com/css?family=Anton&display=swap');
+
 	/* ADDING EXTRA FONTS
 	@import url('https://fonts.googleapis.com/css?family=Permanent+Marker');
 
@@ -25,8 +27,8 @@
 	/* TEXT */
 
 	p {
-		margin-top: 1em;
-	    margin-bottom: 0em;
+		margin-top: 0.0em;
+	    margin-bottom: .5em;
 	    font-size: 1.3em;
 	    font-weight: 500;
 	    line-height: 1.3em;
@@ -47,22 +49,29 @@
 		font-size: 2.2em;
 		font-weight: 500;
 		line-height: 1.2em;
-		margin-bottom: 0.5em;
+		margin-bottom: 0.4em;
 	}
 
 
 	h2 {
-		font-size: 3.0em;
+		font-size: 1.5em;
 		font-weight: 500;
 		line-height: 1.2em;
-		margin-bottom: 0.5em;
+		margin-bottom: 0.0em;
 	}
 
 	h3 {
-		/*font-size: 2.2em;*/
+
+		font-size: 2.5em;
 		line-height: 1.3em;
 		font-weight: 500;
-		margin-bottom: 0.8em;
+		margin-top: 1em;
+		margin-bottom: 1.3em;
+		padding-left: 0.2em;
+		background-color: #44717F;
+		text-align: center;
+		padding-bottom: .1em;
+    	padding-top: .1em;
 	}	
 
 
@@ -118,7 +127,7 @@
 		background-image: linear-gradient(
                      rgba(20,20,20, .8), 
                      rgba(20,20,20, .8)),
-                     url("../../images/bg/bg_1080.jpg");
+                     url("../../images/bg/bg4.jpg");
 
 	}	
 
@@ -290,7 +299,7 @@
 		background-color: white;
 		color: white;
 
-		padding: 8em 0 5em 0;
+		/*padding: 8em 0 5em 0;*/
 		color: rgba(255, 255, 255, 0.50);
 	}	
 
@@ -298,7 +307,7 @@
 		background-color: black;
 		color: #FFFFFF;
 
-		padding: 8em 0 5em 0;
+		padding: 4em 0 5em 0;
 		background-attachment: fixed;
 
 
@@ -333,7 +342,7 @@
 		color: #FFFFFF;
 
 
-		padding: 8em 0 5em 0;
+		padding: 4em 0 5em 0;
 		background-color: #101524;
 		background-attachment: fixed;
 
@@ -370,7 +379,7 @@
 		color: #FFFFFF;
 
 
-		padding: 8em 0 5em 0;
+		padding: 4em 0 5em 0;
 		background-color: #101524;
 		background-attachment: fixed;
 
@@ -382,7 +391,7 @@
 		background-image: linear-gradient(
                      rgba(20,20,20, .8), 
                      rgba(20,20,20, .8)),
-                     url("../../images/bg/bg_1080.jpg");
+                     url("../../images/bg/bg4.jpg");
 	}
 
 
@@ -494,9 +503,9 @@
 		/*background-image: url("../../images/bg/overlay_70.png"), url("../../images/bg/bg_1080.jpg");*/
 
 		background-image: linear-gradient(
-                     rgba(20,20,20, .5), 
-                     rgba(20,20,20, .5)),
-                     url("../../images/bg/bg_1080.jpg");
+                     rgba(20,20,20, .6), 
+                     rgba(20,20,20, .6)),
+                     url("../../images/bg/bg4.jpg");
 
 
   		/*background: radial-gradient(
@@ -544,12 +553,20 @@
 
 	.banner_text {
 
-		max-width:60%;
+		max-width:900px;
+		text-align: center;
+
 
 	}
 
 
+	.were_excited {
 
+		max-height:6em;
+		max-width: 100%;
+		margin-bottom: -.5em;
+		margin-top: 4em;
+	}
 
 
 	/* MEDIA QUERIES */
@@ -580,7 +597,7 @@
 		}
 
 		.banner_text {
-			max-width:95%;
+			max-width:75%;
 		}
 
 		#banner {
@@ -635,6 +652,11 @@
 			flex-direction: column; 
 		}
 
+		.banner_text {
+			max-width:85%;
+		}
+
+
 		.feature .image {
 			width: 100%;
 			padding: 0em 0em 2em 0em;
@@ -650,25 +672,31 @@
 
 		}
 
+		/*
+
 		.wrapper.style1 h2 {
 			font-size: 2.5em;
 		}
 
 		.wrapper.style2 h2 {
-			font-size: 2.5em;
+			font-size: 1.8em;
 		}
 
 		.wrapper.style3 h2 {
-			font-size: 2.5em;
+			font-size: 1.8em;
 		}
 
 		.wrapper.style4 h2 {
-			font-size: 2.5em;
-		}						
+			font-size: 1.8em;
+		}	
+
+		*/					
 
 	}
 
 	@media screen and (max-width: 736px) {
+
+	
 
 		.feature {
 			margin-bottom: 2em;
@@ -688,6 +716,7 @@
 		.feature .content {
 			padding: 0em 1em 1em 1em;
 		}
+
 
 		#header.alt {
 			/*padding: 0.5em 1em;*/
