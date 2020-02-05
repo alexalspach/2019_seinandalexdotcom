@@ -29,8 +29,8 @@
 	/* TEXT */
 
 	p {
-		margin-top: 0.0em;
-	    margin-bottom: .5em;
+		margin-top: .6em;
+	    margin-bottom: .6em;
 	    font-size: 1.3em;
 	    font-weight: 500;
 	    line-height: 1.3em;
@@ -40,6 +40,10 @@
 	.p_lessmargin{
 		margin-top: -0.5em;
 	}
+
+	.p_moremargin{
+		margin-top: 1.6em;
+	}	
 
 
 	h1, h2, h3, h4, h5, h6 {
@@ -58,7 +62,7 @@
 	h2 {
 		font-size: 1.5em;
 		font-weight: 500;
-		line-height: 1.2em;
+		line-height: 1.0em;
 		margin-bottom: 0.0em;
 	}
 
@@ -103,6 +107,7 @@
 
 	.full_width_image {
 		margin-top: 1em;
+		margin-bottom: 5em;
 		width:100%;
 		border:0.2em solid white;
 	}	
@@ -751,6 +756,11 @@
 			max-width:95%;
 		}
 
+		.full_width_image {
+			margin-top: 1em;
+			margin-bottom: 3em;
+		}
+
 		#banner {
 			padding: 5em 0em 3em 0em;
 			/*background: url("images/overlay.png"), url("../../images/bg/birmingham4_narrow.jpg") 0 0 / cover ;*/
@@ -758,6 +768,10 @@
 
 		.dates_landscape{
 	    	width: 60%;
+    	}
+
+    	h1 {
+   			font-size: 1.7em;
     	}	
 
 		h3 {
@@ -779,9 +793,13 @@
 			padding: 0.0em .8em;
 		}
 
+		/*
+
 		p{
 			font-size: 1em;
 		}
+
+		*/
 
 
 
@@ -793,9 +811,10 @@
 
 	@media screen and (max-width: 380px) {	
 
-
+		/*
 		p{
-			font-size: .8em;
+			font-size: 1.3em;
 		}
+		*/
 
 	}
