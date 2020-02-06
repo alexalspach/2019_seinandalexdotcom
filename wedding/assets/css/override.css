@@ -75,6 +75,8 @@
 		margin-bottom: 1.3em;
 		padding-left: 0.2em;
 		background-color: #44717F;
+		/*background-color: rgba(81,186,164,.5);*/
+
 		text-align: center;
 		padding-bottom: .1em;
     	padding-top: .1em;
@@ -591,12 +593,41 @@
 	}
 
 	.banner_text {
-
 		max-width:900px;
+		width:95%;
+
+		text-align: center;
+		margin-bottom: 2%;
+	}
+
+
+	.clicktorsvp_small{
+		max-width:600px;
+		width:75%;
+
 		text-align: center;
 
-
+		padding-top:2%;
+		padding-bottom:2%;
+		padding-left: 4%;
+		padding-right: 4%;
+		border:0.4em solid white;
+		border-radius:2em;		
 	}
+
+	.clicktorsvp_big {
+		max-width:700px;
+		width:75%;
+
+		text-align: center;
+
+		padding-top:2%;
+		padding-bottom:2%;
+		padding-left: 4%;
+		padding-right: 4%;
+		border:0.4em solid #51BAA4;
+		border-radius:2em;
+	}	
 
 
 	.were_excited {
@@ -637,9 +668,6 @@
 			
 		}
 
-		.banner_text {
-			max-width:75%;
-		}
 
 		#banner {
     		padding: 11em 0 9em 0;
@@ -686,10 +714,6 @@
 			-webkit-flex-direction: column;
 			-ms-flex-direction: column;
 			flex-direction: column; 
-		}
-
-		.banner_text {
-			max-width:85%;
 		}
 
 
@@ -746,15 +770,31 @@
 		#banner p {
 			line-height: 1.5em;
 		}
+
+		.clicktorsvp_small{
+			border-radius: 1em
+		}
+
+		.clicktorsvp_big{
+			border-radius: 1em
+		}					
 		
 
 	}
 
 	@media screen and (max-width: 480px) {	
 
-		.banner_text {
-			max-width:95%;
-		}
+
+
+		.clicktorsvp_big {
+			width:95%;
+			border-radius: 1em;
+		}	
+
+		.clicktorsvp_small {
+			width:75%;
+			border-radius: 1em;
+		}			
 
 		.full_width_image {
 			margin-top: 1em;
